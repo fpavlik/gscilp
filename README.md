@@ -1,5 +1,5 @@
-# GSCILpP
-GSCILpP - Google Search Console Indexing Link Publisher - is a tool to automatically or semi-automatically updating your URLs in search console using Google API. 
+# GSCILP
+GSCILP - Google Search Console Indexing Link Publisher - is a tool to automatically or semi-automatically updating your URLs in search console using Google API. 
 
 ## !!! ATTENTION !!!
 Before use make sure you understand how Google API quota works. You can find limits [here](https://developers.google.com/webmaster-tools/limits).
@@ -27,22 +27,22 @@ thanks @fusebit for this instruction. Origin [repo](https://github.com/fusebit/g
 ## Basic usage
 
 ```ts
-import { GSCILpP } from 'gscilpp';
+import { GSCILP } from 'gscilp';
 
-const gscilppSitemap = new GSCILpP({
+const gscilpSitemap = new GSCILP({
     googleKeyPath: '/path/to/key/file.json',
     sitemapPath: '../sitemap.xml'
 });
 
 // OR
 
-const gscilppLinks = new GSCILpP({
+const gscilpLinks = new GSCILP({
     googleKeyPath: '/path/to/key/file.json',
     linksToUpdate: ['link1', 'link2', ..., 'link-n']
 });
 
-gscilppSitemap.sendLinks();
-gscilppLinks.sendLinks();
+gscilpSitemap.sendLinks();
+gscilpLinks.sendLinks();
 ```
 This examples will update up to 200 links by default from sitemap (1 option) or from array of links (2 ooption).
 

@@ -1,6 +1,6 @@
 {
     "name": "gscilp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "GSCILP - Google Search Console Indexing Link Publisher - is a tool to automatically or semi-automatically updating your URLs in search console using Google API",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
