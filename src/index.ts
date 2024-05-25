@@ -128,6 +128,7 @@ export class GSCILP {
                 if (res.status !== 200) {
                     console.log("Error while sending request to Google: ", res)
                 } else {
+                    console.log(`Link '${link}' was updated`);
                     counter++;
                 }
             } catch (error) {
